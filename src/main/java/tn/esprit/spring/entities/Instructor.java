@@ -32,8 +32,8 @@ public class Instructor implements Serializable {
 	LocalDate dateOfHire;
 
 	// Making "courses" private and transient
-	@OneToMany(mappedBy = "instructor") // Assuming Course has a field named 'instructor'
-	private transient Set<Course> courses;
+	@OneToMany // Assuming Course has a field named 'instructor'
+	transient Set<Course> courses;
 
 	/**
 	 * Calculates the years of service based on the date of hire.
