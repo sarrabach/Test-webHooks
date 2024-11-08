@@ -10,7 +10,7 @@ RUN mvn dependency:go-offline -B
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-# Étape 2 : Créer l'image exécutable pour l'application
+# Étape 2 : Créer l'image exécutable pour l'application docker
 FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
 
