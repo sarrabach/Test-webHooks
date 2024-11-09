@@ -1,4 +1,4 @@
-# Étape 1 : Construire l'application
+# Étape 1 : Construire l'application docker 
 FROM maven:3.8.6-eclipse-temurin-17 AS build
 WORKDIR /app
 
